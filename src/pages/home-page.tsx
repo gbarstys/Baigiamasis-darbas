@@ -6,7 +6,7 @@ import {
 
 } from '@mui/material';
 import React from 'react';
-import logo from '../components/leashlogo.png';
+import logo from '../assets/leashlogo.png';
 import Section from '../components/section';
 
 const HomePage: React.FC = () => (
