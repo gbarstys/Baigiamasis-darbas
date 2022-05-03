@@ -8,7 +8,7 @@ const GalleryPage: React.FC = () => {
   const [leashes, setLeashes] = useState<Leash[]>([]);
 
   useEffect(() => {
-    axios.get<Leash[]>('http://localhost:3000/leashes')
+    axios.get<Leash[]>('http://localhost:8000/leashes')
       .then(({ data }) => setLeashes(data))
       .catch(console.error);
   }, []);
