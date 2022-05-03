@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import LeashContainer from '../components/leashContainer';
 import LeashCard from '../components/leashCard';
+import Leash from '../types/leash';
 
-const GalleryPage: React.FC = () => (
-  <LeashContainer>
-    <LeashCard title="Pavadėlis Baltas S" description="Baltos spalvos pavadėlis skirtas mažos veislės šunims" price={15.50} img="https://images.unsplash.com/photo-1517598499378-be07cbf2e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGxlYXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-  </LeashContainer>
-);
+const GalleryPage: React.FC = () => {
+  const [leashes, setLeashes] = useState<Leash[]>([]);
+
+  useEffect(() => {
+    axios.get<Leash[]>('http://localhost:3000/leashes')
+      .then(({ data }) => setLeashes(data))
+      .catch(console.error);
+  }, []);
+
+  return (
+    <LeashContainer>
+      {leashes.map(({ id, ...leashprops }) => <LeashCard key={id} {...leashprops} />)}
+    </LeashContainer>
+  );
+};
 
 export default GalleryPage;
