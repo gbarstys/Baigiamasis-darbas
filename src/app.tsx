@@ -10,6 +10,7 @@ import ContactsPage from './pages/contacts-page';
 import HomePage from './pages/home-page';
 import LandingPageLayout from './components/landing-page-layout';
 import CreateYourselfPage from './pages/createyourself-page';
+import AdminLoginPage from './admin/login-page';
 
 const App: React.FC = () => (
   <BrowserRouter>
@@ -19,6 +20,7 @@ const App: React.FC = () => (
         <Route path="create" element={<CreateYourselfPage />} />
         <Route path="gallery" element={<GalleryPage />} />
         <Route path="contacts" element={<ContactsPage />} />
+        <Route path="admin" element={<AdminLoginPage />} />
       </Route>
     </Routes>
   </BrowserRouter>
