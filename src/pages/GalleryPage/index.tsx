@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import LeashContainer from '../components/leashContainer';
-import LeashCard from '../components/leashCard';
-import Leash from '../types/leash';
+import LeashContainer from '../../components/leashContainer';
+import LeashCard from '../../components/leashCard';
+import Leash from '../../types/leash';
 
 const GalleryPage: React.FC = () => {
   const [leashes, setLeashes] = useState<Leash[]>([]);
