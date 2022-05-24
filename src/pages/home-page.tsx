@@ -46,10 +46,10 @@ const HomePage: React.FC = () => (
     }}
     >
       <Typography gutterBottom variant="h4" component="h1" color="white" fontFamily="Quicksand">
-        Minimalist Design HandMade Leashes
+        Rankų darbo minimalistiniai pavadėliai
       </Typography>
       <Typography variant="body2" color="white" fontFamily="Quicksand" fontSize="20px">
-        This brand creates handmade leashes for dog shows and everyday activities. You can choose from already made products or choose components by yourself, (color, length, size, etc..)
+        Noli design pavadėliai skirti šunų parodoms ir kasdieninėms veikloms. Jūs galite rinktis iš jau pagamintų arba susikurti savo pasirinkdami (spalvą, ilgį, dydį ir t.t..)
       </Typography>
       <Section>
         <Button variant="contained" color="primary">Susikurk pats!</Button>

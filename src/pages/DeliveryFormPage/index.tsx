@@ -20,7 +20,7 @@ const DeliveryPage: React.FC = () => (
         <PersonIcon />
       </Typography>
       <Typography variant="h6" sx={{ mx: 1 }}>
-        Jusų duomenys
+        Jūsų duomenys
       </Typography>
     </Box>
     <Box

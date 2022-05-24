@@ -4,7 +4,7 @@ import LeashContainer from '../../components/leashContainer';
 import LeashCard from '../../components/leashCard';
 import Leash from '../../types/leash';
 
-const GalleryPage: React.FC = () => {
+const ProductsPage: React.FC = () => {
   const [leashes, setLeashes] = useState<Leash[]>([]);
 
   useEffect(() => {
@@ -20,4 +20,4 @@ const GalleryPage: React.FC = () => {
   );
 };
 
-export default GalleryPage;
+export default ProductsPage;

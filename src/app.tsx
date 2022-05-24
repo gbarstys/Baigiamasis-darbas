@@ -5,7 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import GalleryPage from './pages/GalleryPage';
+import ProductsPage from './pages/ProductsPage';
 import ContactsPage from './pages/ContactsPage';
 import HomePage from './pages/home-page';
 import LandingPageLayout from './components/landing-page-layout';
@@ -19,7 +19,7 @@ const App: React.FC = () => (
       <Route path="/" element={<LandingPageLayout />}>
         <Route index element={<HomePage />} />
         <Route path="create" element={<CreateYourselfPage />} />
-        <Route path="gallery" element={<GalleryPage />} />
+        <Route path="products" element={<ProductsPage />} />
         <Route path="contacts" element={<ContactsPage />} />
         <Route path="admin" element={<AdminLoginPage />} />
         <Route path="delivery" element={<DeliveryPage />} />

@@ -21,12 +21,8 @@ const Navbar: React.FC = () => (
         <Box>
           <NavbarLink to="/">Home</NavbarLink>
           <NavbarLink to="/create">Create Yourself!</NavbarLink>
-          <NavbarLink to="/gallery">Gallery</NavbarLink>
+          <NavbarLink to="/products">Products</NavbarLink>
           <NavbarLink to="/contacts">Contacts</NavbarLink>
-        </Box>
-        <Box>
-          <NavbarLink to="/login">Login</NavbarLink>
-          <NavbarLink to="/register">Register</NavbarLink>
         </Box>
       </Toolbar>
     </Container>

@@ -37,7 +37,7 @@ const LeashCard: React.FC<LeashCardProps> = ({
           {' '}
           €
         </Button>
-        <Button variant="outlined" size="small" color="warning">Užsakyti</Button>
+        <Button variant="outlined" size="small" color="success">Užsakyti</Button>
       </CardActions>
     </Box>
   </Card>
