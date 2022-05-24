@@ -19,10 +19,10 @@ const Navbar: React.FC = () => (
       }}
       >
         <Box>
-          <NavbarLink to="/">Home</NavbarLink>
-          <NavbarLink to="/create">Create Yourself!</NavbarLink>
-          <NavbarLink to="/products">Products</NavbarLink>
-          <NavbarLink to="/contacts">Contacts</NavbarLink>
+          <NavbarLink to="/">Pagrindinis</NavbarLink>
+          <NavbarLink to="/create">Susikurk pats!</NavbarLink>
+          <NavbarLink to="/products">Produktai</NavbarLink>
+          <NavbarLink to="/contacts">Kontaktai</NavbarLink>
         </Box>
       </Toolbar>
     </Container>

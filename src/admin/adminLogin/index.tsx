@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import {
   Container, Paper, Box, Button, TextField,
 } from '@mui/material';
-import SectionTitle from '../components/sectionTitle';
+import SectionTitle from '../../components/sectionTitle';
 import AuthContext from './auth-context';
 
 const AdminLoginPage: React.FC = () => {
