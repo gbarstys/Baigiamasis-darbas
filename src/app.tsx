@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  BrowserRouter,
   Routes,
   Route,
 } from 'react-router-dom';
@@ -19,25 +18,25 @@ import ProductsEdit from './admin/adminProductsEdit';
 import GalleryEdit from './admin/adminGalleryEdit';
 
 const App: React.FC = () => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<LandingPageLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="create" element={<CreateYourselfPage />} />
-        <Route path="products" element={<ProductsPage />} />
-        <Route path="contacts" element={<ContactsPage />} />
-        <Route path="delivery" element={<DeliveryPage />} />
-      </Route>
-      <Route path="/" element={<AdminPageLayout />}>
-        <Route path="admin" element={<AdminLoginPage />} />
-        <Route path="admin/dashboard" element={<AdminDashboard />} />
-        <Route path="admin/dashboard/orders" element={<AdminOrders />} />
-        <Route path="admin/dashboard/products" element={<ProductsEdit />} />
-        <Route path="admin/dashboard/gallery" element={<GalleryEdit />} />
 
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  <Routes>
+    <Route path="/" element={<LandingPageLayout />}>
+      <Route index element={<HomePage />} />
+      <Route path="create" element={<CreateYourselfPage />} />
+      <Route path="products" element={<ProductsPage />} />
+      <Route path="contacts" element={<ContactsPage />} />
+      <Route path="delivery" element={<DeliveryPage />} />
+    </Route>
+    <Route path="/" element={<AdminPageLayout />}>
+      <Route path="admin" element={<AdminLoginPage />} />
+      <Route path="admin/dashboard" element={<AdminDashboard />} />
+      <Route path="admin/dashboard/orders" element={<AdminOrders />} />
+      <Route path="admin/dashboard/products" element={<ProductsEdit />} />
+      <Route path="admin/dashboard/gallery" element={<GalleryEdit />} />
+
+    </Route>
+  </Routes>
+
 );
 
 export default App;

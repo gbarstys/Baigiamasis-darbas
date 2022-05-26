@@ -3,10 +3,8 @@ import {
   AppBar,
   Toolbar,
   Container,
-  Typography,
   Box,
 } from '@mui/material';
-import PetsIcon from '@mui/icons-material/Pets';
 import NavbarLink from './navbar-link';
 
 const Navbar: React.FC = () => (
