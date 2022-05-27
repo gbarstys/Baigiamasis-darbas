@@ -7,12 +7,12 @@ import {
 import ProductsPage from './pages/ProductsPage';
 import ContactsPage from './pages/ContactsPage';
 import HomePage from './pages/home-page';
-import LandingPageLayout from './components/landing-page-layout';
+import LandingPageLayout from './components/layouts/landing-page-layout';
 import CreateYourselfPage from './pages/CreateYourselfPage';
 import AdminLoginPage from './admin/adminLogin';
 import DeliveryPage from './pages/DeliveryFormPage';
 import AdminDashboard from './admin/adminDashboard';
-import AdminPageLayout from './components/admin-page-layout';
+import AdminPageLayout from './components/layouts/admin-page-layout';
 import AdminOrders from './admin/adminOrders/index';
 import ProductsEdit from './admin/adminProductsEdit';
 import GalleryEdit from './admin/adminGalleryEdit';

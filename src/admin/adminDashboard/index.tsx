@@ -12,7 +12,7 @@ const AdminDashboard: React.FC = () => {
         <Typography>
           Welcome to Admin dashboard! In the menu you can choose youre actions
         </Typography>
-        <List sx={{ display: 'flex', flexDirection: 'column' }}>
+        <List sx={{ display: 'flex', flexDirection: 'column', maxWidth: 400 }}>
           <Button color="warning" onClick={() => navigate('/admin/editorders')}>
             You can view your orders
           </Button>

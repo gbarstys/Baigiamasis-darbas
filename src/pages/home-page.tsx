@@ -15,8 +15,12 @@ const HomePage: React.FC = () => {
   return (
     <Container sx={{
       display: 'flex',
+      '@media(maxWidth: 1100px)': {
+        flexWrap: 'wrap',
+      },
       alignItems: 'center',
       justifyContent: 'space-around',
+      minWidth: 600,
       gap: 15,
       margin: 'auto',
       width: 1 / 1,
@@ -26,7 +30,7 @@ const HomePage: React.FC = () => {
         component="img"
         src={logo}
         sx={{
-          width: '600px',
+          maxWidth: '600px',
           boxShadow: 3,
           borderRadius: 3,
           height: 600,
@@ -35,6 +39,7 @@ const HomePage: React.FC = () => {
       />
 
       <Box sx={{
+
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -54,7 +59,7 @@ const HomePage: React.FC = () => {
         <Typography variant="body2" color="white" fontFamily="Quicksand" fontSize="20px">
           Noli design pavadėliai skirti šunų parodoms ir kasdieninėms veikloms. Jūs galite rinktis iš jau pagamintų arba susikurti savo pasirinkdami (spalvą, ilgį, dydį ir t.t..)
         </Typography>
-        <Section>
+        <Section fontFamily="Quicksand" sx={{ gap: 3 }}>
           <Button variant="contained" color="primary" onClick={() => navigate('/create')}>Susikurk pats!</Button>
           <Button variant="contained" color="primary" onClick={() => navigate('/products')}>Rinkis iš jau pagamintų</Button>
         </Section>
