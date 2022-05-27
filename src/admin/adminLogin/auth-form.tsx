@@ -13,6 +13,7 @@ import AuthContext from '../../features/auth/auth-context';
 type AuthFormProps = {
   formTitle: string,
   submitText: string,
+  btnActive?: boolean
   onSubmit?: React.FormEventHandler<HTMLFormElement>,
 };
 
@@ -21,6 +22,7 @@ const contentWidth = 400;
 const AuthForm: React.FC<AuthFormProps> = ({
   formTitle,
   submitText,
+  btnActive = true,
   onSubmit,
   children,
 }) => {
@@ -60,7 +62,6 @@ const AuthForm: React.FC<AuthFormProps> = ({
       >
         <SecurityIcon color="primary" sx={{ fontSize: 45 }} />
         <Typography component="h1" variant="h4">{formTitle}</Typography>
-
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -71,7 +72,14 @@ const AuthForm: React.FC<AuthFormProps> = ({
         >
           {children}
         </Box>
-        <Button variant="contained" size="large" type="submit">{submitText}</Button>
+        <Button
+          variant="contained"
+          size="large"
+          type="submit"
+          sx={{ width: 120, height: 45 }}
+        >
+          { submitText}
+        </Button>
       </Paper>
     </Container>
   );

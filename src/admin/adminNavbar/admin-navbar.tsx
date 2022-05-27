@@ -23,9 +23,9 @@ const AdminNavbar: React.FC = () => {
         >
           <Box>
             <AdminNavbarLink to="/admin/dashboard">Dashboard</AdminNavbarLink>
-            <AdminNavbarLink to="/admin/dashboard/orders">Orders</AdminNavbarLink>
-            <AdminNavbarLink to="/admin/dashboard/products">Products Edit</AdminNavbarLink>
-            <AdminNavbarLink to="/admin/dashboard/gallery">Gallery Edit</AdminNavbarLink>
+            <AdminNavbarLink to="admin/editorders">Orders</AdminNavbarLink>
+            <AdminNavbarLink to="admin/editproducts">Products Edit</AdminNavbarLink>
+            <AdminNavbarLink to="admin/editgallery">Gallery Edit</AdminNavbarLink>
           </Box>
           <Box>
             {loggedIn ? <NavbarAuthMenu /> : <NavbarVisitorMenu />}

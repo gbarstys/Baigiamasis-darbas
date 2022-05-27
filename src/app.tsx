@@ -30,9 +30,9 @@ const App: React.FC = () => (
     <Route path="/" element={<AdminPageLayout />}>
       <Route path="admin" element={<AdminLoginPage />} />
       <Route path="admin/dashboard" element={<AdminDashboard />} />
-      <Route path="admin/dashboard/orders" element={<AdminOrders />} />
-      <Route path="admin/dashboard/products" element={<ProductsEdit />} />
-      <Route path="admin/dashboard/gallery" element={<GalleryEdit />} />
+      <Route path="admin/editorders" element={<AdminOrders />} />
+      <Route path="admin/editproducts" element={<ProductsEdit />} />
+      <Route path="admin/editgallery" element={<GalleryEdit />} />
 
     </Route>
   </Routes>
